@@ -21,7 +21,6 @@ const HeroSection: React.FC = () => {
           <span className="text-black">Descubre lo que </span>
           <span className="text-secondary-dark">realmente comes</span>,
           <br className="hidden sm:inline" />
-          <span className="text-black"> personalizado para ti</span>
         </h1>
         <p className="text-lg sm:text-xl md:text-2xl text-black max-w-3xl mx-auto mb-10">
           Todo lo que tus productos esconden, ScanEat te lo cuenta.
