@@ -31,7 +31,15 @@ const HeroSection: React.FC = () => {
           variant="secondary"
           className="shadow-xl hover:shadow-2xl transform hover:scale-105"
         >
-          Quiero probar
+          Probar el prototipo
+        </Button>
+         <Button 
+          onClick={scrollToParticipate}
+          size="lg"
+          variant="secondary"
+          className="shadow-xl hover:shadow-2xl transform hover:scale-105"
+        >
+          Dejar mi opinión (Formulario)
         </Button>
       </div>
     </section>
