@@ -1,41 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import logo from '../images/batata.png';
 import { APP_NAME, NAV_LINKS, SECTION_IDS } from '../constants';
-
-const ScanEatIcon: React.FC<{ className?: string }> = ({ className }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 64 64"
-    className={className}
-    aria-labelledby="scanEatIconTitle"
-    role="img"
-  >
-    <title id="scanEatIconTitle">ScanEat Logo</title>
-    {/* Magnifying Glass Rim */}
-    <circle cx="30" cy="28" r="16" fill="none" stroke="#1F2937" strokeWidth="3" />
-    {/* Magnifying Glass Handle */}
-    <line x1="42" y1="40" x2="54" y2="52" stroke="#1F2937" strokeWidth="3" strokeLinecap="round" />
-    {/* Stylized Leaf inside Magnifying Glass */}
-    <path 
-      d="M30 32 Q 35 22 40 20 Q 35 28 30 32 M30 32 Q 25 22 20 20 Q 25 28 30 32"
-      fill="#19433A" // New primary.DEFAULT (Green)
-    />
-     <path 
-      d="M30,16 C30,13 32,11 34,12 C33,14 31,15 30,16z"
-      fill="#19433A" // New primary.DEFAULT (Green)
-    />
-    <path
-      d="M30,16 Q35,22 40,20 Q35,28 30,32 Q25,22 20,20 Q25,28 30,32"
-      transform="translate(-2, 2) scale(0.8) rotate(-15 30 26)" // Adjusted position and size
-      fill="#19433A" // New primary.DEFAULT (Green)
-    />
-    <path 
-      d="M30 20 C 25 22 22 28 22 32 C 22 36 25 40 30 42 C 35 40 38 36 38 32 C 38 28 35 22 30 20 Z M30 38 C 27 37 25 35 25 32 C 25 29 27 27 30 26 C 33 27 35 29 35 32 C 35 35 33 37 30 38 Z"
-      transform="translate(0, -2) scale(0.5) rotate(10 30 30)" // Smaller, slightly different leaf
-      fill="#12322A" // New primary.dark
-    />
-  </svg>
-);
-
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -94,14 +59,13 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <a href={`#${SECTION_IDS.home}`} onClick={(e) => scrollToSection(e, `#${SECTION_IDS.home}`)} className="flex items-center space-x-2">
-            <ScanEatIcon className="w-8 h-8 transition-transform duration-300 transform hover:rotate-[-5deg]" />
-            <span 
-              className={`text-xl font-bold transition-colors duration-300`} // Removed logoTextColor
-            >
-              <span className="text-primary-dark">Scan</span>
-              <span className="text-secondary-dark">Eat</span>
-            </span>
-          </a>
+  <img src={logo} alt="Logo" className="w-10 h-10 transition-transform duration-300 transform hover:rotate-[-5deg]" />
+  <span className={`text-xl font-bold transition-colors duration-300`}>
+    <span className="text-primary-dark">Scan</span>
+    <span className="text-secondary-dark">Eat</span>
+  </span>
+</a>
+
           
           <div className="hidden md:flex space-x-4">
             {NAV_LINKS.map((link) => (
