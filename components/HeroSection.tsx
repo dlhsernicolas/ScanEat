@@ -17,11 +17,10 @@ const HeroSection: React.FC = () => {
           {/* Left Column: Text and CTAs */}
           <div className="md:col-span-3 text-center md:text-left animate-fade-in-up">
             <h1 className="text-5xl lg:text-6xl xl:text-7xl font-medium tracking-tight mb-6 leading-tight">
-              <span className="block text-neutral-darkest">Descubre lo que realmente comes,</span>
-              <span className="block text-primary-DEFAULT font-bold">personalizado para ti.</span>
+              <span className="block text-primary-DEFAULT font-bold">Saber lo que comes, es cuidarte.</span>
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl text-neutral-dark max-w-xl mx-auto md:mx-0 mb-10">
-              Todo lo que tus productos esconden, ScanEat te lo cuenta.
+              Conoce cada producto y toma decisiones informadas.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4" style={{ animationDelay: '0.2s' }}>
