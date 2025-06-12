@@ -59,10 +59,13 @@ const HeroSection: React.FC = () => {
                 <div className="absolute -left-[9px] sm:-left-[11px] top-[115px] sm:top-[122px] h-[28px] sm:h-[30px] w-0.5 bg-neutral-dark/60 rounded-l-sm"></div> {/* Vol Down */}
 
                 {/* Screen Area */}
+                <a href={PROTOTYPE_LINK} target="_blank" rel="noopener noreferrer">
                 <div className="absolute inset-0 rounded-[28px] sm:rounded-[34px] bg-white flex items-center justify-center overflow-hidden">
+                  
                   <img src={prototipoImg} alt="Prototipo" className="object-cover w-full h-full" />
 
                 </div>
+                </a>
               </div>
               {/* iPhone 14 Pro Mockup END */}
             </div>
