@@ -5,7 +5,7 @@ import { SECTION_IDS } from '../constants';
 
 const HeroSection: React.FC = () => {
   const PROTOTYPE_LINK = "https://www.figma.com/proto/jDJHP35LiVk29qi26zypAz/Prototipos?node-id=550-780&t=lQH05xwpzc4h3yu1-1&scaling=min-zoom&content-scaling=fixed&page-id=550%3A758&starting-point-node-id=550%3A780&show-proto-sidebar=1"; 
-  const GOOGLE_FORM_LINK = "#google-form-link";
+  const GOOGLE_FORM_LINK = "https://forms.gle/tDi9tpJgm2sNRhtx5";
 
   return (
     <section 
